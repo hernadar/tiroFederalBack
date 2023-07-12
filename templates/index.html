@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--Arrow--</title>
+    <link rel="icon" type="image/png" href="../static/img/favicon-32x32.png">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <!-- link iconos cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- links para formulario -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+   
+    <!-- links jquery cdn -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    
+</head>
+
+<body>
+
+    <!-- navegación -->
+    <header>
+        <nav class="nav-menu">
+            <img class="nav-logo" src="../static/img/Tiro Federal Trelew Arqueria chico.png" alt="logo">
+            <button class="open-menu" id="open-menu"><i class="bi bi-list"></i></button>
+            <ul class="nav-list" id="nav-list">
+                <button class="close-menu" id="close-menu"><i class="bi bi-x"></i></button>
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#quienessomos">Quienes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#novedades">Novedades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                <li class="nav-item"><a target="_blank" class="nav-link" href="https://arquerosonline.com.ar/">Torneos
+                        <i class="bi bi-box-arrow-up-right"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- inicio -->
+    <main>
+        <section id="inicio" class="section-inicio">
+            <div class="container">
+                <div class="inicio-inner">
+                    <h1 class="inicio-title">Tiro Federal Trelew Arquería</h1>
+                    <p class="inicio-text">Somos un club apasionado al tiro con arco, estamos en las instalaciones del Tiro Federal Trelew Argentino donde brindamos cursos de iniciación al tiro con arco, proporcionando equipos y lugar para la práctica de este apasionante deporte.</p>
+                    <div class="btns">
+                        <a class="btn" href="#cursos">Inscripciones</i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- quienes somos -->
+        <section id="quienessomos" class="section-quienessomos">
+            <div class="container">
+                <div class="quienessomos-inner">
+                    <h2 class="quienessomos-title">Quienes Somos</h2>
+                    <p class="quienessomos-text">Somos un club apasionado al tiro con arco, estamos en las instalaciones del Tiro Federal Trelew Argentino donde brindamos cursos de iniciación al tiro con arco, proporcionando equipos y lugar para la práctica de este apasionante deporte.</p>
+                    <div class="btns">
+                        <a id="btn-abrir-popup-quienes" class="btn" >Saber más</i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- novedades --->
+        <section id="novedades" class="section-novedades">
+        <div class="carrousel">
+            <div id="grande" class="grande">
+               
+                
+            </div>
+    
+            <ul id="puntos" class="puntos">
+                
+            </ul>
+        </div>
+    
+                            <div class="overlay" id="overlay">
+                                <div class="popup" id="popup">
+                                    <a href="#novedades" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                                </div>
+                            </div>
+<
+        </section>
+
+        <!-- cursos -->
+        <section id="cursos" class="section-cursos">
+            <div class="container">
+                <div class="cursos-inner">
+                    <img src="../static/img/img-cursos.jpg" alt="">
+                    <div class="cursos-info">
+                        <h2 class="cursos-title">Cursos</h2>
+                        <p class="section-text">Inscribite en nuestros cursos de iniciación en el tiro con arco, 4 clases donde aprenderás las técnicas de arquería y las normas de seguridad, clases teóricas y prácticas dictadas por instructores calificados y equipos propios, los cupos son limitados.</p>
+                        <div class="btns">
+                            <a class="btn" id="btn-cursos" href="#formulario">Inscribite</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Inicio Formulario Consulta-->
+        <section id="formulario" class="section-formulario">
+        <div class="container">
+            <form class="mt-6 needs-validation" novalidate>
+                <!-- <form class="mt-6"> -->
+                <div class="row mb-3">
+                    <h3 class="col-12">Formulario de Consulta</h3>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-2 form-label" for="nombre">Nombre:</label>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre"
+                            required></input>
+                        <!-- <div class="valid-feedback">ok</div> -->
+                        <div class="invalid-feedback">Por favor ingrese nombre</div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-2 form-label" for="apellido">Apellido</label>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apellido"
+                            required></input>
+                        <!-- <div class="valid-feedback"></div> -->
+                        <div class="invalid-feedback">Por favor ingrese apellido</div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-2 form-label" for="emailImput">Email</label>
+                    <div class="col-6">
+                        <input type="email" class="form-control" id="emailImput" placeholder="Ingrese su E-mail"
+                            required></input>
+                        <!-- <div class="valid-feedback"></div> -->
+                        <div class="invalid-feedback">Por favor ingrese su e-mail</div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-2 form-label" for="ciudad">Ciudad</label>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su Ciudad"
+                            required></input>
+                        <!-- <div class="valid-feedback"></div> -->
+                        <div class="invalid-feedback">Por favor ingrese la ciudad donde vive</div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-2 form-label" for="provincia">Provincia</label>
+                    <div class="col-6">
+                        <select class="col-12 col-form-label form-control" id="provincia" required>
+
+                        </select>
+                    </div>
+                    <!-- <div class="valid-feedback"></div> -->
+                    <!-- <div class="invalid-feedback">Por favor seleccione una opcion</div> -->
+                </div>
+                <div class="mb-3 marco">
+                    <label id="experiencia" class="col-2 form-label" for="nivel">Experiencia</label>
+                    <div class="col-12  grupo-botones" role="group" required>
+                        <button type="button" class="btn " value="0">Principiante</button>
+                        <button type="button" class="btn " value="1">Intermedio</button>
+                        <button type="button" class="btn " value="2">Profesional</button>
+                    </div>
+                    <!-- <div class="valid-feedback"></div> -->
+                    <!-- <div class="invalid-feedback">Por favor seleccione una opcion</div> -->
+                </div>
+                    <div >
+                        <button id="enviar" type="submit" class="btn mt-3">Enviar</button>
+                    </div>
+               
+                
+            </form>
+        </div>
+        </section>
+
+        <!--Fin Formulario Consulta-->
+
+        <!-- footer -->
+        <footer class="section-footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="social">
+                        <a target="_blank"
+                            href="https://www.facebook.com/groups/239558763384940/permalink/1175024126505061/?mibextid=Nif5oz"><i
+                                class="bi bi-facebook"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/tirofederaltrelewarqueria/"><i
+                                class="bi bi-instagram"></i></i></a>
+                        <a target="_blank" href="https://maps.app.goo.gl/gvRZdoBAervSJh2f9"><i
+                                class="bi bi-geo-alt-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../static/js/main.js"></script>
+
+</body>
+
+</html>
